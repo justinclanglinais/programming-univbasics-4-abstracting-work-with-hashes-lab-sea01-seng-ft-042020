@@ -5,8 +5,6 @@ end
 def read_from_hash(hash, key)
   if hash[key]
     return hash[key]
-  else
-    return hash[key]
     hash[key] = 1 
   end
 end
