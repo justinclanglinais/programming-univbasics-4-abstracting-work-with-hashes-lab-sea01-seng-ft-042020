@@ -3,7 +3,10 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  return hash[key]
+  if hash[key]
+    return hash[key]
+  else
+    hash[key] = 1 
 end
 
 def update_counting_hash(hash, key)
